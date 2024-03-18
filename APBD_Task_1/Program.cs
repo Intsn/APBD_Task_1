@@ -1,5 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿static double CalculateAverage(int[] numbers)
+{
+    if (numbers == null || numbers.Length == 0)
+    {
+        throw new ArgumentException("Input array must not be null or empty.");
+    }
 
-Console.WriteLine("Modification 2");
+    double sum = 0;
+    foreach (int num in numbers)
+    {
+        sum += num;
+    }
 
-Console.WriteLine("Modification 3");
+    return sum / numbers.Length;
+}
