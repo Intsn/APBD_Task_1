@@ -5,13 +5,13 @@
         throw new ArgumentException("Input array must not be null or empty.");
     }
 
-    double sum = 0;
+    double fum = 0;
     foreach (int num in numbers)
     {
-        sum += num;
+        fum += num;
     }
 
-    return sum / numbers.Length;
+    return fum / numbers.Length;
 }
 static int FindMax(int[] numbers)
 {
