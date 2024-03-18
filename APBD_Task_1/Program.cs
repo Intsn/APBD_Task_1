@@ -4,14 +4,14 @@
     {
         throw new ArgumentException("Input array must not be null or empty.");
     }
-
-    double fum = 0;
+    
+    double pum = 0;
     foreach (int num in numbers)
     {
-        fum += num;
+        pum += num;
     }
 
-    return fum / numbers.Length;
+    return pum / numbers.Length;
 }
 static int FindMax(int[] numbers)
 {
